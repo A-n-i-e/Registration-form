@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+    --red:hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%) ;
+    --gray-blue: hsl(246, 25%, 77%);
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background:url("bg-intro-desktop.png"), var(--red);
+    
+}
+
+.container{
+    height: 100vh;
+    margin: 0 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reg-left{
+    color:white;
+}
+.left-heading{
+    font-size:2rem;
+    font-weight: 700;
+}
+.reg-right{
+    min-width:250px;
+    width:100%;
+    padding: 2rem 1rem;
+    
+}
+.right-heading{
+    color: white;
+    background-color:var(--blue);
+    text-align: center;
+    display: block;
+    padding: .6rem 1.5rem;
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.right-heading span{
+    font-weight:700 ;
+    
+}
+
+.right-form{
+    
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 2rem .5rem;
+    border-radius: .5rem;
+
+}
+
+.input-box{
+    margin:.5rem 0;
+}
+.input-box input{
+    width: 85%;
+    height: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--dark-blue);
+    outline:none;
+    
+    padding: 1rem;
+    border-radius: .4rem;
+    border: 1px solid var(--gray-blue);
+}
+.input-box input:focus{
+    border: 1px solid var(--blue);
+}
+.btn input{
+    outline: none;
+    width: 90%;
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    font-family: 'Poppins', sans-serif;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.right-form p{
+    padding: 0 1rem;
+    font-size: .8rem;
+    color: var(--gray-blue);
+}
+.right-form p a{
+    text-decoration: none;
+    color:red;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 400px){
+    .container{
+        flex-direction: column;
+        margin: 0 2rem;
+        height: auto;
+    }
+    .reg-left{
+        margin-top:  5rem;
+        text-align: center;
+    }
+    
+}
+
+
